@@ -29,6 +29,6 @@ class multiLayeredPerceptron():
         return self.encoder.decode(array=value, strings=list(dataFrame['Disease']))
 
     def runNeuralNet(self, dataFrame):
-        classifier = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(10,10,10, 10), max_iter=5000000)
+        classifier = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(100,90,80, 70,60,50), max_iter=50000000)
         self.train(classifier, self.extractValues(dataFrame), dataFrame['Disease'])
         return classifier
