@@ -8,4 +8,10 @@ initialisedTestData = network.dataFrameInit('testDataset.csv')
 
 mlp = network.runNeuralNet(dataFrame=initialisedData)
 
-print(network.predict(initialisedTestData, 1, mlp))
+for x in range(6) :
+    pred = network.predict(initialisedTestData,initialisedData, x, mlp)
+    while pred == None:
+        mlp = network.runNeuralNet(dataFrame=initialisedData)
+        pred = network.predict(initialisedTestData, initialisedData, x, mlp)
+    print(pred)
+
