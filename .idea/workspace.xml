@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afe6d9f0-db1f-4157-9d4c-b64a767a5e2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BCDdiagnoses/.gitattributes" beforeDir="false" />
-    </list>
+    <list default="true" id="afe6d9f0-db1f-4157-9d4c-b64a767a5e2c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +165,19 @@
       <option name="presentableId" value="Default" />
       <updated>1589916022953</updated>
     </task>
+    <task id="LOCAL-00001" summary="main commit">
+      <created>1590316038154</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590316038154</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="main commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="419" y="7" key="CommitChangelistDialog2" timestamp="1590316036197">
@@ -178,22 +188,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590180858323" />
-    <state width="1515" height="156" key="GridCell.Tab.0.bottom" timestamp="1590315994051">
+    <state width="1515" height="156" key="GridCell.Tab.0.bottom" timestamp="1590316677041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590315994051" />
-    <state width="1515" height="156" key="GridCell.Tab.0.center" timestamp="1590315994051">
+    <state width="1515" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590316677041" />
+    <state width="1515" height="156" key="GridCell.Tab.0.center" timestamp="1590316677041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590315994051" />
-    <state width="1515" height="156" key="GridCell.Tab.0.left" timestamp="1590315994051">
+    <state width="1515" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590316677041" />
+    <state width="1515" height="156" key="GridCell.Tab.0.left" timestamp="1590316677041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590315994051" />
-    <state width="1515" height="156" key="GridCell.Tab.0.right" timestamp="1590315994051">
+    <state width="1515" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590316677041" />
+    <state width="1515" height="156" key="GridCell.Tab.0.right" timestamp="1590316677041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590315994051" />
+    <state width="1515" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590316677041" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1590279856062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
