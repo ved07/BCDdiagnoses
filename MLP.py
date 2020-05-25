@@ -16,7 +16,7 @@ class multiLayeredPerceptron():
         dataframe = pd.DataFrame(columns=dataFrame.columns,index=[1])
         for value in dataframe.columns:
             if value in array:
-                dataframe[value][0] = 1.
+                dataframe[value][1] = 1.
         dataframe = dataframe.fillna(0.)
         return dataframe
 
