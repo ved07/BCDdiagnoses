@@ -1,4 +1,0 @@
----
-applications:
- - name: BCD-Diagnoses
-   memory: 128M

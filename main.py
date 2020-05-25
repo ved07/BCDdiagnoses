@@ -1,9 +1,10 @@
+
 import numpy as np
 from flask import Flask, request, render_template
 #import sim as sm
 import random
 import nlpsys as nps
-from MLP import multiLayeredPerceptron
+from mlp import multiLayeredPerceptron
 network = multiLayeredPerceptron()
 initialisedData = network.dataFrameInit('data.csv')
 print(nps.get_most_similar_symptoms("tirednese"))
@@ -36,12 +37,12 @@ def my_form_post():
 
     text = request.form['text']
     print(diagnose(text,mlp))
-    return render_template('my-form.html',display_title="Diagnosis:", display_word=diagnose(text,mlp))
-    #return render_template('my-form.html',display_title="Diagnosis:", display_word="uncomment the above line somethings wrong")
+    return render_template('my-form.html',display_title="Diagnosis:", display_word=diagnose(text,mlp)) 
+    #return render_template('my-form.html',display_title="Diagnosis:", display_word="uncomment the above line somethings wrong") 
 
 
 
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(port=5000)

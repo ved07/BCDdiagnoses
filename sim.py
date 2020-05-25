@@ -43,8 +43,8 @@ def sim2(text1, text2):
     y = list(text2.replace(" ",""))
     m = len(intersection(t,y))
     x = len(t)
-    y = len(y)
-    avg = float((len(t)+len(y))/2)
+    mm = len(y)
+    avg = float((x+mm)/2)
     return float(m/avg)
 
 

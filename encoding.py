@@ -35,5 +35,3 @@ class encoder():
             if number >  0  :
 
                 return strings[array.index(number)]
-
-
