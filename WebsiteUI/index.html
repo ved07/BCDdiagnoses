@@ -230,18 +230,6 @@
         </div>
       </div>
       </form>
-    {% if got_list %}
-        <text>Answer:<br></text>
-        {% for item in random_list %}
-            <text>{{ item }}<br></text>
-        {% endfor %}
-    {% endif %}
-    
-      </form>
-        <div id="results">
-          <p id="random_word">{{display_title}}</p>
-          <p id="word">{{display_word}}</p>
-          }</a></p></div>
           
       </div>
     </div>
@@ -260,10 +248,9 @@
         <span onclick="document.getElementById('diagnosisResult').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
       <div class="w3-container">
-        <?php
-        $diagnosisResult = ADITYA, YOU BETTA SORT THIS OUT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        echo "<p class="w3-container">Our algorithms have predicted you have </p>".$diagnosisResult."<p> based on your provided details.</p>";
-        ?>
+        <p class="w3-container">
+          Our algorithms have predicted you most likely have "COVID-19" based on your provided details.
+        </p>
       </div>
     </div>
   </div>
