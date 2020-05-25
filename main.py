@@ -34,10 +34,11 @@ totalscore = 0
 def my_form_post():
 
     text = request.form['text']
-    print(diagnose(text,mlp))
+
     return render_template('index.html',display_title="Diagnosis:", display_word=diagnose(text,mlp))
     #return render_template('my-form.html',display_title="Diagnosis:", display_word="uncomment the above line somethings wrong") 
-
+    print(diagnose(text,mlp))
+    print("It should have updated by now.")
 
 
 
