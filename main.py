@@ -16,11 +16,9 @@ app = Flask("app")
 def diagnose(inputtext, mlp):
   symp_arr = nps.find_symps_basic(inputtext)
   diag = network.initPredData(initialisedData, symp_arr)
-  pred = network.predict(diag,initialisedData, 0, mlp)
-  while pred == None:
-          mlp = network.runNeuralNet(dataFrame=initialisedData)
-          pred = network.predict(diag, initialisedData, 0, mlp)
-  return(pred)
+  pred = network.predict(diag,initialisedData,0,mlp)
+
+
 #Just for the demo.
 
 @app.route('/')
@@ -37,7 +35,7 @@ def my_form_post():
 
     text = request.form['text']
     print(diagnose(text,mlp))
-    return render_template('my-form.html',display_title="Diagnosis:", display_word=diagnose(text,mlp)) 
+    return render_template('my-form.html',display_title="Diagnosis:", display_word=diagnose(text,mlp))
     #return render_template('my-form.html',display_title="Diagnosis:", display_word="uncomment the above line somethings wrong") 
 
 
