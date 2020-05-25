@@ -32,7 +32,7 @@ class encoder():
 
         for number in array:
 
-            if number == 1:
+            if number >  0  :
 
                 return strings[array.index(number)]
 
