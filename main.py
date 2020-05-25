@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 #import sim as sm
 import random
 import nlpsys as nps
-from mlp import multiLayeredPerceptron
+from MLP import multiLayeredPerceptron
 network = multiLayeredPerceptron()
 initialisedData = network.dataFrameInit('data.csv')
 print(nps.get_most_similar_symptoms("tirednese"))
