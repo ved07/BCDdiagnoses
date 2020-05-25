@@ -10,7 +10,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='slider/slider.css'>
-    <script src="../Hacathon_Diagnosis_Webapp_branch/slider/slider.js"></script>
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -193,7 +193,7 @@
 </div>
 
 <div id="WebApp">  
-  <form class="w3-container" method="diagnosis">
+  <!-- <form class="w3-container" method="diagnosis">
     <div class="w3-container w3-card w3-large w3-light-gray">
     <p>
       <b>Hi! If you aren't feeling well please describe your symptoms below, and we will provide a potential diagnosis.
@@ -202,13 +202,60 @@
     </b>
     </p>
     <div class="w3-section">
-      <textarea class="w3-input w3-border" type="Symptoms" placeholder="Please enter details here" name="message" required></textarea>
-      <button class="w3-button w3-block w3-green w3-section w3-padding" onclick="document.getElementById('diagnosisResult').style.display='block'" type="diagnose"><span>&#9993;</span> Diagnose!</button>
+      <textarea class="w3-input w3-border" type="Symptoms" placeholder="Please enter details here" required></textarea>
+      <button id="diagnosisBtn">Open Modal</button>
     </div>
   </div>
-  </form>
+  </form> -->
 
-  <div id="diagnosisResult" class="w3-modal">
+  <div class="center" style="font-family:'Bitter';">
+    <!-- <form method="POST">
+        <input  autocomplete="off", name="text">
+        <input type="submit">
+    </form> -->
+    <form class="w3-container" method="POST">
+        <div class="w3-container w3-card w3-large w3-light-gray">
+        <p style="color:black;">
+          <b>Hi! If you aren't feeling well please describe your symptoms below, and we will provide a potential diagnosis.
+            <br>
+            Please remember to give sufficient details regarding your symptoms.
+        </b>
+        </p>
+        <br>
+        <div class="w3-section">
+          <textarea class="w3-input w3-border" autocomplete="off" name="text" type="submit" placeholder="Please enter details here" required></textarea>
+          <br>
+          <a class="w3-bar-item w3-button"
+        style="background-color: #09c5a8; color: #2c3c5b;">Diagnose!</a>
+        </div>
+      </div>
+      </form>
+    {% if got_list %}
+        <text>Answer:<br></text>
+        {% for item in random_list %}
+            <text>{{ item }}<br></text>
+        {% endfor %}
+    {% endif %}
+    
+      </form>
+        <div id="results">
+          <p id="random_word">{{display_title}}</p>
+          <p id="word">{{display_word}}</p>
+          }</a></p></div>
+          
+      </div>
+    </div>
+</div>
+
+<!-- The Modal
+<div id="diagnosisResult" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+</div> -->
+
+  <!-- <div id="diagnosisResult" class="w3-modal">
     <div class="w3-modal-content w3-card-4">
         <span onclick="document.getElementById('diagnosisResult').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
@@ -219,8 +266,7 @@
         ?>
       </div>
     </div>
-  </div>
-</div>
+  </div> -->
 
 </div>
 
@@ -250,6 +296,32 @@ function show(shown, hidden) {
   document.getElementById(shown).style.display='block';
   document.getElementById(hidden).style.display='none';
   return false;
+}
+
+// Get the modal
+var modal = document.getElementById("diagnosisResult");
+
+// Get the button that opens the modal
+var btn = document.getElementById("diagnosisBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 </script>
 
