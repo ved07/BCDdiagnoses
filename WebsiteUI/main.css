@@ -29,9 +29,16 @@ html, body{
     color: #2c3c5b;
   }
 
+#about p{
+  font-size: 1.5vw;
+}
+
   @media only screen and (max-width: 900px) {
     .navHide {
         display: none;
+    }
+    #about p{
+      font-size: 2.5vw;
     }
 }
  
@@ -46,12 +53,6 @@ html, body{
   .video{
     height: 720px;
     width: 1080px;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  #about{
-    font-size: 10px;
   }
 }
 
