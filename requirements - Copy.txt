@@ -1,4 +1,0 @@
-flask
-numpy
-sklearn==0.0
-
