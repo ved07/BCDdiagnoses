@@ -1,4 +1,3 @@
-
 import numpy as np
 from flask import Flask, request, render_template
 #import sim as sm
@@ -37,8 +36,8 @@ def my_form_post():
 
     text = request.form['text']
     print(diagnose(text,mlp))
-    return render_template('my-form.html',display_title="Diagnosis:", display_word=diagnose(text,mlp)) 
-    #return render_template('my-form.html',display_title="Diagnosis:", display_word="uncomment the above line somethings wrong") 
+    return render_template('my-form.html',display_title="Diagnosis:", display_word=diagnose(text,mlp))
+    #return render_template('my-form.html',display_title="Diagnosis:", display_word="uncomment the above line somethings wrong")
 
 
 

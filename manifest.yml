@@ -1,4 +1,4 @@
 ---
 applications:
- - name: app-name
+ - name: BCD-Diagnoses
    memory: 128M
