@@ -37,9 +37,7 @@ class multiLayeredPerceptron():
         uniquePreds = np.unique(predArray)
         for prediction in uniquePreds:
             score = predArray.count(prediction)
-            print(prediction)
             ind = list(commonality['Disease']).index(prediction)
-            print(ind)
             score = commonality['Commonality'].values[ind] *score
             scoredArray.append(score)
         oldScore = 0
@@ -72,6 +70,6 @@ class multiLayeredPerceptron():
             pred = classifier.predict(dataFrame, originDataFrame, position, mlp)
         return (pred)
     def runNeuralNet(self, dataFrame):
-        classifier = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(100,90,80, 70,60,50), max_iter=500000000)
+        classifier = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(100,90,80, 70,60,50), max_iter=500000000, learning_rate='adaptive')
         self.train(classifier, self.extractValues(dataFrame), dataFrame['Disease'])
         return classifier
