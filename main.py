@@ -23,7 +23,7 @@ def diagnose(inputtext, mlp):
 
 @app.route('/')
 def rmy_form():
-  return render_template('my-form.html',display_title = "",display_word = "Please give a detailed description of how you feel in the textbox above")
+  return render_template('index.html',display_title = "",display_word = "Please give a detailed description of how you feel in the textbox above")
 
 future_q = "Press submit to start"
 future_a = "start"
@@ -35,7 +35,7 @@ def my_form_post():
 
     text = request.form['text']
     print(diagnose(text,mlp))
-    return render_template('my-form.html',display_title="Diagnosis:", display_word=diagnose(text,mlp))
+    return render_template('index.html',display_title="Diagnosis:", display_word=diagnose(text,mlp))
     #return render_template('my-form.html',display_title="Diagnosis:", display_word="uncomment the above line somethings wrong") 
 
 
